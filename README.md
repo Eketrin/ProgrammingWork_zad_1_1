@@ -8,7 +8,7 @@ Your student's number: 252329
 
 The name of your course: Information Systems in Economics and Finance
 
-Your task number:
+Your task number: 1, 10 (not ready)
 
 -------------------------------------
 RU
@@ -21,4 +21,4 @@ RU
 
 Название вашего курса: Информационные системы в экономике и финансах
 
-Номер вашего задания: 
+Номер вашего задания: 1, 10 (not ready)
