@@ -2,7 +2,7 @@ EN
 
 Your name: Ekaterina Vladimirovna Baykova
 
-Name of your group: PI25-2b
+Name of your group: PI25-2v
 
 Your student's number: 252329
 
