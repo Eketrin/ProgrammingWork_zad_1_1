@@ -14,7 +14,7 @@ def generate_secret():
     random.shuffle(digits)
     return ''.join(map(str, digits[:4]))
 
-# быки и коровы
+#подсчёт быков и коров
 def count_bulls_cows(secret, guess):
     bulls = cows = 0
     for i in range(4):
@@ -24,17 +24,17 @@ def count_bulls_cows(secret, guess):
             cows += 1
     return bulls, cows
 
-# проверка пользователя
+# проверка ввода пользователя
 def is_correct(guess):
-    if len(guess) != 4:
+    if len(guess) != 4: #больше 4
         return False
-    if not guess.isdigit():
+    if not guess.isdigit(): #не число
         return False
     if len(set(guess)) != 4:  # все цифры должны быть разными
         return False
     return True
 
-
+#основная функция
 def main():
     print("Быки - правильные цифры на правильных местах")
     print("Коровы - правильные цифры на неправильных местах")
@@ -42,11 +42,11 @@ def main():
 
     secret = generate_secret()
     score = 0
-    print(f"{secret} - загаданное число, выводится для проверки программы")
+    print(f"{secret} - загаданное число, выводится для проверки программы") #это можно убрать
     while True:
         guess = input("Введите вашу догадку (4 разные цифры): ").strip() #чистим пробелы
 
-        if not is_correct(guess): #если пользователь ввёл неправильный формат и тп
+        if not is_correct(guess): #если пользователь ввёл неправильный формат
             print("Некорректный ввод!")
             continue
 
@@ -56,7 +56,7 @@ def main():
         print(f"Результат: {bulls} быков, {cows} коров")
 
         if bulls == 4:
-            print(f"Поздравляю! Вы угадали число {secret} за {score} попыток!")
+            print(f"Вы угадали число {secret} за {score} попыток")
             break
 
 
